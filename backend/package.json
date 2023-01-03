@@ -6,9 +6,13 @@
   "version": "1.0.0",
   "description": "projeto tecnico para a sherenergy",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js ",
+    "dev": "nodemon./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,7 @@
   ],
   "author": "Willian Carvalho da Silva",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/willcrvlh/desafio-sharenergy-2023-01/issues"
   },
