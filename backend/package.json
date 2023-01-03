@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "projeto tecnico para a sherenergy",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willcrvlh/desafio-sharenergy-2023-01.git"
+  },
+  "keywords": [
+    "API",
+    "challenge",
+    "teste"
+  ],
+  "author": "Willian Carvalho da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willcrvlh/desafio-sharenergy-2023-01/issues"
+  },
+  "homepage": "https://github.com/willcrvlh/desafio-sharenergy-2023-01#readme"
+}
