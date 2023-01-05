@@ -46,6 +46,33 @@ const clienteController = app => {
             res.status(500).json({error})
         }
     })
+
+    app.patch('/cliente/:id', async (req, res) => {
+        const id = req.params.id
+        const { nome, email, telefone, endereço, cpf } = req.body;
+        const cliente =
+        {
+            nome,
+            email,
+            telefone,
+            endereço,
+            cpf
+        }
+
+        try {
+            const atualizaCliente = await clienteModel.updateOne(
+                {_id : id},
+                cliente)
+
+            if(!atualizaCliente){
+                return res.status(422).json({message: 'Cliente não encontrado'});
+            }
+
+            res.status(200).json({msg: "cliente atualizado com sucesso"});
+        } catch (error) {
+            res.status(500).json({error})
+        }
+    })
 }
 
 export default clienteController
