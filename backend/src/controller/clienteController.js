@@ -25,8 +25,26 @@ const clienteController = app => {
     }
     })
 
-    app.get('/cliente', (req, res) => {
-        
+    app.get('/cliente',async (req, res) => {
+        try {
+            const cliente = await clienteModel.find()
+            res.status(200).json(cliente)
+        } catch (error) {
+            res.status(500).json({error: "não foi possivel buscar clientes"});
+        }
+    })
+
+    app.get('/cliente/:id', async (req, res) => {
+        const id = req.params.id
+        if(!clienteModel){
+            return res.status(422).json({message: 'Cliente não encontrado'})
+        }
+        try {
+            const cliente = await clienteModel.find({_id: id})
+            res.status(200).json({cliente})
+        } catch (error) {
+            res.status(500).json({error})
+        }
     })
 }
 
