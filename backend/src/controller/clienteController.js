@@ -72,6 +72,20 @@ const clienteController = app => {
         } catch (error) {
             res.status(500).json({error})
         }
+
+    })
+    app.delete('/cliente/:id', async (req, res) => {
+        const id = req.params.id
+        const cliente = clienteModel.findOne({_id: id})
+        if(!cliente){
+            return res.status(422).json({message: 'Cliente não encontrado'})
+        }
+        try{
+            await clienteModel.deleteOne({_id: id})
+            req.status(200).json({message: 'Cliente removido com sucesso'})
+        }catch(error){
+            res.status(500).json({error})
+        }
     })
 }
 
