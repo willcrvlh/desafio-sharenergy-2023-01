@@ -1,8 +1,12 @@
 import React from 'react'
+import Button from '../../Components/Button/Button'
+
 
 function Usuarios() {
   return (
-    <div>Usuarios</div>
+    <div>
+      <Button/>
+    </div>
   )
 }
 
