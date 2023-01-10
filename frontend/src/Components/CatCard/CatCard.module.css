@@ -1,0 +1,11 @@
+.image{
+    width: 20em;
+    height: 40em;
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+}
