@@ -1,0 +1,26 @@
+.div{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+
+    margin: 1em;
+}
+
+.input{
+    width: 15em;
+    height: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.busca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+.h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #515151;
+    text-align: center;
+}
