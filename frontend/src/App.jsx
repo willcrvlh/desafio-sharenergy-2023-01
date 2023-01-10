@@ -3,6 +3,9 @@ import { BrowserRouter, Routes as Switch, Route } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Usuarios from './Pages/Usuarios/Usuarios'
 import Footer from './Components/Footer/Footer';
+import Cat from './Pages/Cat/Cat';
+import Dog from './Pages/Dog/Dog';
+import Clientes from './Pages/Clientes/Clientes';
 
 function App() {
 
@@ -14,6 +17,9 @@ function App() {
         <Switch>
           <Route path="" exact element={<Home/>}/>
           <Route path="/usuarios" exact element={<Usuarios/>}/>
+          <Route path="/Cat" exact element={<Cat/>}/>
+          <Route path="/Dog" exact element={<Dog/>}/>
+          <Route path="/clientes" exact element={<Clientes/>}/>
         </Switch>
         <Footer/>
       </BrowserRouter>
