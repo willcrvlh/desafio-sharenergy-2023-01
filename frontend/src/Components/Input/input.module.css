@@ -1,0 +1,9 @@
+.input{
+    display: flex;
+    justify-content: center;
+    width: 15em;
+    height: 3em;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.3em;
+    margin-left: 1em;
+}
