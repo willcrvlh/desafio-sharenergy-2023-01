@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className={S.header}>
       <div div class="container-fluid" className={S.foto}>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img
             src={img}
             alt="Logo"
@@ -26,17 +26,17 @@ function Header() {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="">
+            <a class="nav-link active" aria-current="page" href="/Cat">
               HTTP Cat
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/Dog">
               Randon Dog
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/Clientes">
               Clientes
             </a>
           </li>
